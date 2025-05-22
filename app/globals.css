@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #f2dfce;
+    --text-primary: #473936;
+  }
+  
+  html, body {
+    @apply min-h-screen;
+  }
+  
+  body {
+    @apply font-secondary bg-secondary text-base text-primary min-h-screen;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-primary;
+  }
+}
