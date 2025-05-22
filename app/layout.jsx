@@ -20,9 +20,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-BR" className={`${marcellus.variable} ${montserrat.variable}`}>
-      <body className="min-h-screen">
-        {children}
+    <html 
+      lang="pt-BR" 
+      className={`${marcellus.variable} ${montserrat.variable}`}
+      style={{ backgroundColor: '#f2dfce' }}
+    >
+      <body 
+        className="min-h-screen"
+        style={{ backgroundColor: '#f2dfce', minHeight: '100vh' }}
+      >
+        <div style={{ backgroundColor: '#f2dfce', minHeight: '100vh' }}>
+          {children}
+        </div>
       </body>
     </html>
   );
