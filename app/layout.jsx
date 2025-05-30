@@ -4,6 +4,8 @@ import "./globals.css";
 //components
 import Header from "@/components/Header";
 import CursorProvider from "@/components/CursorContext";
+import Transition from "@/components/Transition";
+import PageTransition from "@/components/PageTransition";
 
 
 const marcellus = Marcellus({
@@ -21,12 +23,16 @@ const montserrat = Montserrat({
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br" className="h-screen">
-      <body className={`${marcellus.variable} ${montserrat.variable} 
+      <body 
+      className={`${marcellus.variable} ${montserrat.variable} 
       overflow-x-hidden`}
       >
         <CursorProvider>
+          <Transition />
           <Header />
-          
+          <PageTransition>
+            { children }
+          </PageTransition>
           {children}
         </CursorProvider>
       </body>
