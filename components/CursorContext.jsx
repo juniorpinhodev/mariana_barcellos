@@ -33,18 +33,18 @@ const CursorProvider = ({ children }) => {
         return () => window.removeEventListener("mousemove", handleMouseMove);
     }, [cursor]);
 
-    const mouseEnterHandle = () => {
+    const mouseEnterHandler = () => {
         setCursor({ size: 90, background: "#00423a" });
         setIsHovering(true);
     };
 
-    const mouseLeaveHandle = () => {
+    const mouseLeaveHandler = () => {
         setCursor({ size: 30, background: "#473936" });
         setIsHovering(false);
     }
     
     return (
-        <CursorContext.Provider value={{ mouseEnterHandle, mouseLeaveHandle}}>
+        <CursorContext.Provider value={{ mouseEnterHandler, mouseLeaveHandler}}>
             <motion.div 
                 className="fixed z-[99] rounded-full pointer-events-none transition-all duration-300"
                 style={{
