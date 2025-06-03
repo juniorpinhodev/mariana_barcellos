@@ -56,14 +56,19 @@ function DialogContent({
       <DialogPrimitive.Content
         data-slot="dialog-content"
         className={cn(
-          "bg-background data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 rounded-lg border p-6 shadow-lg duration-200 sm:max-w-lg",
-          className
+          "fixed left-[50%] top-[50%] z-50 grid p-4 w-[90vw] md:w-[70vw] xl:w-[40vw] h-[480px] translate-x-[-50%] translate-y-[-50%] gap-4 border border-slate-200 bg-white shadow-lg duration-200 data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-lg dark:border-slate-800 dark:bg-slate-950",
+  className
         )}
         {...props}>
         {children}
         <DialogPrimitive.Close
-          className="ring-offset-background focus:ring-ring data-[state=open]:bg-accent data-[state=open]:text-muted-foreground absolute top-4 right-4 rounded-xs opacity-70 transition-opacity hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4">
-          <XIcon />
+          className="absolute -right-2 -top-10 xl:-right-7 rounded-sm opacity-80 
+          ring-offset-white transition-opacity hover:opacity-100 
+          focus:outline-none disabled:pointer-events-none 
+          data-[state=open]:bg-slate-100 data-[state=open]:text-slate-500 
+          dark:ring-offset-slate-950 dark:focus:ring-slate-300 
+          dark:data-[state=open]:bg-slate-800 dark:data-[state=open]:text-slate-400">
+          <XIcon className="h-8 w-8 text-white"/>
           <span className="sr-only">Close</span>
         </DialogPrimitive.Close>
       </DialogPrimitive.Content>

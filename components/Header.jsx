@@ -33,7 +33,7 @@ const Header = () => {
                             {/* telefone */}
                             <div className='flex items-center gap-2 text-white'>
                                 <FaPhoneAlt />
-                                <span>+55 48 99999999</span>
+                                <span>+55 48 98446 5676</span>
                             </div>
                             {/* email */}
                             <div className='flex items-center gap-2 text-white'>
@@ -52,8 +52,9 @@ const Header = () => {
                 {/* {logo} */}
                 <div>
                     <Link href="/">
-                        <Image src="/assets/next.svg" 
-                        width={120}
+                        <Image 
+                        src="/assets/logo2.png" 
+                        width={240}
                         height={40}
                         priority
                         alt=""
@@ -75,7 +76,10 @@ const Header = () => {
                 <MobileNav setMobileNav={setMobileNav} />
                 </motion.div>
                 {/* desktop nav */}
-                <div className='hidden xl:block'>
+                <div 
+                onMouseEnter={mouseEnterHandler}
+                onMouseLeave={mouseLeaveHandler} 
+                className='hidden xl:block'>
                     <Nav />
                 </div>
             </div>
