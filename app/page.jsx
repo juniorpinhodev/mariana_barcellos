@@ -66,13 +66,13 @@ const Home = () => {
               onMouseLeave={mouseLeaveHandler}
               className="hidden xl:flex fixed bottom-0"
               >
-              <Image 
+              {/* <Image 
                 src={'/assets/home/img.png'}
                 width={864} 
                 height={650}
                 quality={100}
                 alt="Foto de Doutora Mariana F. Barcellos" 
-                />
+                /> */}
             </motion.div>
           </div>
         </div>

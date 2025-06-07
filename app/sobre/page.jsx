@@ -27,7 +27,7 @@ const sobre = () => {
           }}
           className="relative w-[304px] h-[423px] xl:w-[383px] xl:h-[534px] mb-8 xl:mx-0">
             <Image 
-              src="/assets/sobre/img.jpg" 
+              src="/assets/sobre/massagem2.jpg" 
               fill 
               quality={100} 
               alt="" 
@@ -47,20 +47,24 @@ const sobre = () => {
           }}
           className="flex flex-col items-start xl:max-w-[650px] text-center xl:text-left mx-auto xl:mx-0">
             <h2 className="h2 mb-6 mx-auto max-w-[540px] xl:max-w-none">
-              Massagens, Pedras quentes para o seu bem estar
+             Sobre a Dra. Mariana Fernandes Barcellos
             </h2>
-            <p className="lead max-w-[600px] mx-auto xl:mx-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, dignissimos</p>
+            <p className="lead max-w-[600px] mx-auto xl:mx-0">A Dra. Mariana Fernandes Barcellos é fisioterapeuta graduada pela Faculdade Estácio de Sá e especialista em Fisioterapia Neurofuncional, com título reconhecido pela Associação Brasileira de Fisioterapia Neurofuncional (ABRAFIN) em parceria com o COFFITO. Sua atuação clínica é pautada em rigor técnico, atualização científica constante e abordagem centrada no paciente.
+
+            Com experiência em reabilitação neurológica de pacientes de todas as idades, Mariana dedica-se à recuperação funcional de indivíduos com disfunções do sistema nervoso central e periférico, promovendo melhora da mobilidade, autonomia e qualidade de vida. Sua conduta integra avaliação precisa, intervenção baseada em evidências e um olhar humano que valoriza a singularidade de cada caso.
+
+            Ética, excelência clínica e compromisso com resultados sustentáveis definem sua prática profissional.</p>
             
             {/* itens */}
             <div className="grid grid-cols-3 gap-[30px] mb-14 mx-auto xl:mx-0">
               <div>
-                <StatsItem countNum={13} text="Anos de Mercado"/>
+                <StatsItem countNum={100} countText="%" text="Ambiente terapêutico e relaxante" />
               </div>
               <div>
-                <StatsItem countNum={35} countText="K+" text="Clientes felizes"/>
+                <StatsItem countNum={100} countText="%" text="Clientes felizes"/>
               </div>
               <div>
-                <StatsItem countNum={100} countText="%" text="Relaxamento"/>
+                <StatsItem countNum={100} countText="%" text="Atendimento personalizado" />
               </div>
             </div>
             {/* btn */}
