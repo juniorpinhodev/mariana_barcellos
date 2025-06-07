@@ -79,7 +79,7 @@ const Servicos = () => {
               </p>
             </div>
 
-            {/* Estética & Bem-Estar */}
+            {/* Estética & Bem-Estar
             <div className="flex-1 flex flex-col justify-center items-center xl:items-start">
               <div className="flex items-center gap-[12px] mb-2">
                 <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px]"></div>
@@ -88,7 +88,7 @@ const Servicos = () => {
               <p className="pl-6 text-[15px]">
                 Design de sobrancelhas e cuidados integrativos para sua autoestima e equilíbrio energético.
               </p>
-            </div>
+            </div> */}
 
           </div>
 
