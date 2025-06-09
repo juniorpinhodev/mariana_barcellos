@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="200" height="50">
+	<title>New Project</title>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 19px;fill: #3e2209;font-weight: 400;font-family: "GreatVibes-Regular", "Great Vibes" } 
+	</style>
+	<text id="Dra. Mariana F. Barcellos" style="transform: matrix(1,0,0,1,98.298,31.724)" >
+		<tspan x="-97.2" y="0" class="t0">D</tspan><tspan  y="0" class="t0">r</tspan><tspan  y="0" class="t0">a</tspan><tspan  y="0" class="t0">.</tspan><tspan  y="0" class="t0"> </tspan><tspan  y="0" class="t0">M</tspan><tspan  y="0" class="t0">a</tspan><tspan  y="0" class="t0">r</tspan><tspan  y="0" class="t0">i</tspan><tspan  y="0" class="t0">a</tspan><tspan  y="0" class="t0">n</tspan><tspan  y="0" class="t0">a</tspan><tspan  y="0" class="t0"> </tspan><tspan  y="0" class="t0">F</tspan><tspan  y="0" class="t0">.</tspan><tspan  y="0" class="t0"> </tspan><tspan  y="0" class="t0">B</tspan><tspan  y="0" class="t0">a</tspan><tspan  y="0" class="t0">r</tspan><tspan  y="0" class="t0">c</tspan><tspan  y="0" class="t0">e</tspan><tspan  y="0" class="t0">l</tspan><tspan  y="0" class="t0">l</tspan><tspan  y="0" class="t0">o</tspan><tspan  y="0" class="t0">s</tspan><tspan  y="0" class="t0">
+</tspan>
+	</text>
+</svg>

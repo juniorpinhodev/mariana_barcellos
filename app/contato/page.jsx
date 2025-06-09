@@ -39,9 +39,9 @@ const contato = () => {
                 <div>
                   <h4 className="h4 mb-2">Endereço</h4>
                   <p className="leading-relaxed">
-                    Rua tal tal tal, 478
+                   Rua Jornalista Bento Silverio, 788
                     <br />
-                    Palhoça, SC
+                    Ponte do Imaruim - Palhoça, SC
                   </p>
                 </div>
               </div>

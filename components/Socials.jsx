@@ -6,7 +6,7 @@ const Socials = ({ containerStyles }) => {
     <ul className={`${containerStyles}`}>
          <li>
             <Link 
-                href="https://www.instagram.com/fisiomarianafbarcellos/" 
+                href="https://www.instagram.com/mariespacovip" 
                 target="_blank"
                 rel="noopener noreferrer"
                 >
@@ -15,7 +15,7 @@ const Socials = ({ containerStyles }) => {
         </li>
         <li>
             <Link 
-                href="/"
+                href="https://www.facebook.com/mariana.fernandes.barcellos"
                 target="_blank"
                 rel="noopener noreferrer"
                 >
