@@ -53,9 +53,9 @@ const Header = () => {
                 <div>
                     <Link href="/">
                         <Image 
-                        src="/assets/logo2.png" 
-                        width={240}
-                        height={40}
+                        src="/assets/logo.png" 
+                        width={260}
+                        height={50}
                         priority
                         alt=""
                         />
