@@ -83,3 +83,5 @@ const sobre = () => {
     </motion.section>
   );
 };
+
+export default sobre;
