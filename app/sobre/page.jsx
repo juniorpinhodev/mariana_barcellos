@@ -68,7 +68,15 @@ const sobre = () => {
               </div>
             </div>
             {/* btn */}
-            <button className="btn mx-auto xl:mx-0">Entre em Contato</button>
+            <a 
+              href="https://wa.me/5548984465676?text=Olá%2C%20gostaria%20de%20mais%20informações." 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn mx-auto xl:mx-0"
+            >
+              Entre em Contato
+            </a>
+
           </motion.div>
         </div>
       </div>
