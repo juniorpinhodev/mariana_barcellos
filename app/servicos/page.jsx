@@ -11,9 +11,9 @@ const Servicos = () => {
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { delay: 0.5 } }}
-      className="min-h-screen flex items-center overflow-x-hidden"
+      className="min-h-screen flex items-center overflow-x-hidden pt-[120px] xl:pt-0"
     >
-      <div className="container mx-auto flex items-center justify-between">
+      <div className="container mx-auto flex flex-col xl:flex-row items-center justify-between gap-8 xl:gap-0">
         {/* texto */}
         <motion.div
           initial={{ opacity: 0, x: -60 }}
@@ -24,79 +24,67 @@ const Servicos = () => {
           }}
           onMouseEnter={mouseEnterHandler}
           onMouseLeave={mouseLeaveHandler}
-          className="flex flex-col items-start xl:max-w-[650px] text-center xl:text-left mx-auto"
+          className="flex flex-col items-center xl:items-start xl:max-w-[650px] text-center xl:text-left w-full"
         >
-          <h2 className="h2 mb-6 mx-auto max-w-[540px] xl:max-w-none">
+          <h2 className="h2 text-[34px] sm:text-[36px] md:text-[38px] xl:text-[40px] mb-2 xl:mb-4 max-w-[540px] xl:max-w-none px-4 xl:px-0">
             Nossos Serviços
           </h2>
-          <p className="lead max-w-[600px] mx-auto xl:mx-0">
+          <p className="lead max-w-[600px] mb-6 xl:mb-16 px-4 xl:px-0 text-base xl:text-lg">
             Oferecemos serviços especializados para cuidar da sua saúde, bem-estar físico, emocional e energético.
           </p>
 
           {/* itens */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px] mb-14 mx-auto xl:mx-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 xl:gap-[20px] mb-8 xl:mb-14 w-full px-4 xl:px-0">
             {/* Fisioterapia */}
-            <div className="flex-1 flex flex-col justify-center items-center xl:items-start">
-              <div className="flex items-center gap-[12px] mb-2">
-                <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px]"></div>
-                <h3 className="text-2xl">Fisioterapia</h3>
+            <div className="flex flex-col justify-center items-center xl:items-start">
+              <div className="flex items-center gap-[12px] mb-2 w-full justify-center xl:justify-start">
+                <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px] flex-shrink-0"></div>
+                <h3 className="text-xl xl:text-2xl">Fisioterapia</h3>
               </div>
-              <p className="pl-6 text-[15px]">
+              <p className="xl:pl-6 text-[13px] xl:text-[15px] text-center xl:text-left leading-relaxed">
                 Atendimento domiciliar, adulto, pediátrico e geriátrico (idosos).
               </p>
             </div>
 
             {/* Terapias Integrativas */}
-            <div className="flex-1 flex flex-col justify-center items-center xl:items-start">
-              <div className="flex items-center gap-[12px] mb-2">
-                <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px]"></div>
-                <h3 className="text-2xl">Terapias Integrativas</h3>
+            <div className="flex flex-col justify-center items-center xl:items-start">
+              <div className="flex items-center gap-[12px] mb-2 w-full justify-center xl:justify-start">
+                <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px] flex-shrink-0"></div>
+                <h3 className="text-xl xl:text-2xl">Terapias Integrativas</h3>
               </div>
-              <p className="pl-6 text-[15px]">
+              <p className="xl:pl-6 text-[13px] xl:text-[15px] text-center xl:text-left leading-relaxed">
                 Auriculoterapia (inclusive em bebês), Barra de Access, Cone Chinês e Reiki (para pessoas e pets).
               </p>
             </div>
 
             {/* Massagens */}
-            <div className="flex-1 flex flex-col justify-center items-center xl:items-start">
-              <div className="flex items-center gap-[12px] mb-2">
-                <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px]"></div>
-                <h3 className="text-2xl">Massagens</h3>
+            <div className="flex flex-col justify-center items-center xl:items-start">
+              <div className="flex items-center gap-[12px] mb-2 w-full justify-center xl:justify-start">
+                <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px] flex-shrink-0"></div>
+                <h3 className="text-xl xl:text-2xl">Massagens</h3>
               </div>
-              <p className="pl-6 text-[15px]">
+              <p className="xl:pl-6 text-[13px] xl:text-[15px] text-center xl:text-left leading-relaxed">
                 Drenagem linfática (corporal e facial), relaxante com pedras quentes e relaxante com ventosas.
               </p>
             </div>
 
             {/* Pilates */}
-            <div className="flex-1 flex flex-col justify-center items-center xl:items-start">
-              <div className="flex items-center gap-[12px] mb-2">
-                <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px]"></div>
-                <h3 className="text-2xl">Pilates</h3>
+            <div className="flex flex-col justify-center items-center xl:items-start">
+              <div className="flex items-center gap-[12px] mb-2 w-full justify-center xl:justify-start">
+                <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px] flex-shrink-0"></div>
+                <h3 className="text-xl xl:text-2xl">Pilates</h3>
               </div>
-              <p className="pl-6 text-[15px]">
+              <p className="xl:pl-6 text-[13px] xl:text-[15px] text-center xl:text-left leading-relaxed">
                 Pilates solo e com equipamentos para fortalecimento muscular, melhora da postura, alívio de dores e qualidade de vida.
               </p>
             </div>
-
-            {/* Estética & Bem-Estar
-            <div className="flex-1 flex flex-col justify-center items-center xl:items-start">
-              <div className="flex items-center gap-[12px] mb-2">
-                <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px]"></div>
-                <h3 className="text-2xl">Estética & Bem-Estar</h3>
-              </div>
-              <p className="pl-6 text-[15px]">
-                Design de sobrancelhas e cuidados integrativos para sua autoestima e equilíbrio energético.
-              </p>
-            </div> */}
-
           </div>
 
           {/* botão */}
-          <button className="btn mx-auto xl:mx-0">Saiba Mais</button>
+          <button className="bg-accent min-w-[150px] xl:min-w-[178px] rounded-tl-[30px] rounded-bl-[30px] rounded-tr-[4px] rounded-br-[24px] font-primary uppercase tracking-[1px] h-[48px] xl:h-[58px] pl-6 xl:pl-8 pr-4 xl:pr-6 flex items-center justify-center text-white text-sm xl:text-base">Saiba Mais</button>
         </motion.div>
 
-        {/* imagem */}
+        {/* imagem - apenas desktop */}
         <motion.div
           initial={{ opacity: 0, x: 60 }}
           animate={{
@@ -106,7 +94,7 @@ const Servicos = () => {
           }}
           onMouseEnter={mouseEnterHandler}
           onMouseLeave={mouseLeaveHandler}
-          className="hidden xl:flex w-[384px] h-[534px] relative"
+          className="hidden xl:flex w-[384px] h-[534px] relative flex-shrink-0"
         >
           <Image
             src="/assets/servico/pedras.jpg"
