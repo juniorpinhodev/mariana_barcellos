@@ -27,7 +27,7 @@ const Home = () => {
             <motion.h1 
             onMouseEnter={mouseEnterHandler}
             onMouseLeave={mouseLeaveHandler}
-            className="h1 text-[40px] sm:text-[42px] md:text-[48px] xl:text-[56px] leading-tight"
+            className="h1 text-[48px] sm:text-[52px] md:text-[54px] xl:text-[56px] leading-tight"
             >
               Mariana Barcellos <br />Fisioterapeuta
             </motion.h1>
