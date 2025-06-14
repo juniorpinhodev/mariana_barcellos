@@ -27,14 +27,14 @@ const Home = () => {
             <motion.h1 
             onMouseEnter={mouseEnterHandler}
             onMouseLeave={mouseLeaveHandler}
-            className="h1"
+            className="h1 text-[40px] sm:text-[42px] md:text-[48px] xl:text-[56px] leading-tight"
             >
               Mariana Barcellos <br />Fisioterapeuta
             </motion.h1>
             <motion.p 
               onMouseEnter={mouseEnterHandler}
               onMouseLeave={mouseLeaveHandler} 
-              className="lead max-w-xl mx-auto">
+              className="lead max-w-xl mx-auto text-[14px] sm:text-[16px] md:text-[18px] xl:text-[20px] leading-relaxed">
               Recupere sua mobilidade e qualidade de vida com tratamentos eficazes e personalizados
             </motion.p>
             <div className="flex flex-col xl:flex-row items-center gap-6 max-w-max mx-auto xl:mx-0">
