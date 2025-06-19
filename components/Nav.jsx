@@ -34,7 +34,7 @@ const Nav = () => {
                 href={link.href} 
                 key={index} 
                 className={`${
-                    pathname === link.href && "border-b-2 border-accent"
+                    pathname === link.href && "border-b-2 border-accent-100"
                 } uppercase`}>
                     {link.name}
                 </Link>

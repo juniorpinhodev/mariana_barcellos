@@ -12,8 +12,7 @@ import { AiOutlineMenu } from 'react-icons/ai'
 import MobileNav from './MobileNav';
 import Nav from './Nav';
 import Socials from './Socials';
-import { FaPhoneAlt } from 'react-icons/fa';
-import { IoMdMail } from "react-icons/io";
+import { TbPhysotherapist } from "react-icons/tb";
 
 const Header = () => {
     const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
@@ -21,8 +20,8 @@ const Header = () => {
     return (
         <header className='pb-3 xl:pb-[50px] fixed z-40 w-full bg-accent-100 xl:bg-transparent'>
 
-            {/*topbar*/}
-            <div className='bg-secondary-100 mb-4 xl:mb-[50px] xl:h-[50px] py-4 xl:py-0'>
+            {/*topbar - outra cor para topBar: bg-accent-100 */} 
+            <div className='bg-secondary-100 mb-1 xl:mb-[20px] xl:h-[50px] py-4 xl:py-0'>
                 <div className="container mx-auto h-full">
                     <div className='flex items-center justify-between h-full'>
                         {/* telefone e email */}
@@ -30,16 +29,13 @@ const Header = () => {
                             onMouseEnter={mouseEnterHandler}
                             onMouseLeave={mouseLeaveHandler} 
                             className='flex flex-col lg:flex-row items-center h-full gap-2 xl:gap-6 w-full justify-between xl:w-auto xl:justify-normal'>
-                            {/* telefone */}
-                            <div className='flex items-center gap-2 text-white'>
-                                <FaPhoneAlt />
-                                <span>+55 48 98446 5676</span>
-                            </div>
+                            
                             {/* email */}
-                            <div className='flex items-center gap-2 text-white'>
-                                <IoMdMail />
-                                <span>email@email.com</span>
+                            <div className='flex items-center gap-1 text-white text-[13px]'>
+                                <TbPhysotherapist />
+                                <span>FISIOTERAPEUTA&nbsp;|&nbsp;CREFITO - 10 &nbsp;|&nbsp;341816 - F</span>
                             </div>
+                            
                         </motion.div>
                         {/* Mídias sociais */}
                         <div className='hidden xl:block'>
@@ -48,14 +44,14 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className="container mx-auto flex items-center justify-between px-6">
+            <div className="container mx-auto flex items-center p justify-between px-2">
                 {/* {logo} */}
                 <div>
                     <Link href="/">
                         <Image 
-                        src="/assets/logo.png" 
-                        width={260}
-                        height={50}
+                        src="/assets/LogoModifDra.png" 
+                        width={300}
+                        height={20}
                         priority
                         alt=""
                         />

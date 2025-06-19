@@ -18,7 +18,7 @@ module.exports = {
         },
         accent: {
           DEFAULT: "#f19687",
-          100: "#f2d5c5",
+          100: "#40aaab",
         },
       },
       fontFamily: {
