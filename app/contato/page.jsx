@@ -59,7 +59,7 @@ const contato = () => {
               {/* fim item endereço */}
               
               {/* item telefone */}
-<div className="relative left-8 md:left-[1.5rem] xl:left-0 pl-14">
+<div className="relative right-8 md:left-[1.5rem] xl:left-0 pl-14">
   {/* icone */}
   <div className="absolute left-0 top-0 w-[36px] h-[36px]">
     <Image src="/assets/contato/phone.svg" fill alt="" />
@@ -91,7 +91,7 @@ const contato = () => {
         {/* fim item telefone */}
 
               {/* item email */}
-              <div className="relative pl-14">
+              <div className="relative left-1 pl-14">
                 {/* icone */}
                 <div className="absolute left-0 top-0 w-[36px] h-[36px]">
                   <Image src="/assets/contato/email.svg" fill alt="" />
