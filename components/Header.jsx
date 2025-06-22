@@ -21,7 +21,7 @@ const Header = () => {
         <header className='pb-3 xl:pb-[50px] fixed z-40 w-full bg-secondary xl:bg-transparent'>
 
             {/*topbar - outra cor para topBar: bg-accent-100 */} 
-            <div className='bg-secondary-100 mb-1 xl:mb-[20px] xl:h-[50px] py-4 xl:py-0'>
+            <div className='bg-accent-100 mb-1 xl:mb-[20px] xl:h-[50px] py-4 xl:py-0'>
                 <div className="container mx-auto h-full">
                     <div className='flex items-center justify-between h-full'>
                         {/* telefone e email */}
@@ -49,7 +49,7 @@ const Header = () => {
                 <div>
                     <Link href="/">
                         <Image 
-                        src="/assets/LogoModifDra.png" 
+                        src="/assets/logo.png" 
                         width={300}
                         height={20}
                         priority
