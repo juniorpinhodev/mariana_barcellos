@@ -42,7 +42,7 @@ const Servicos = () => {
                 <h3 className="text-xl xl:text-2xl">Fisioterapia</h3>
               </div>
               <p className="xl:pl-6 text-[13px] xl:text-[15px] text-center xl:text-left leading-relaxed">
-                Atendimento domiciliar, adulto, pediátrico e geriátrico (idosos).
+                Atendimento fisioterapêutico domiciliar pediátrico. 
               </p>
             </div>
 
@@ -64,7 +64,7 @@ const Servicos = () => {
                 <h3 className="text-xl xl:text-2xl">Massagens</h3>
               </div>
               <p className="xl:pl-6 text-[13px] xl:text-[15px] text-center xl:text-left leading-relaxed">
-                Drenagem linfática (corporal e facial), relaxante com pedras quentes e relaxante com ventosas.
+                Drenagem linfática (corporal e facial), massagem relaxante, massagem relaxante com pedras quentes e massagem relaxante com ventosas.
               </p>
             </div>
 
