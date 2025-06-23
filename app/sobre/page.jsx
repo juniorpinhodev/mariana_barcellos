@@ -50,11 +50,11 @@ const sobre = () => {
              Sobre a Dra. Mariana Fernandes Barcellos
             </h2>
             <p className="text-base xl:text-lg mb-6 xl:mb-8 max-w-[600px] leading-relaxed">
-              A Dra. Mariana Fernandes Barcellos é fisioterapeuta graduada pela Faculdade Estácio de Sá e especialista em Fisioterapia Neurofuncional, com título reconhecido pela Associação Brasileira de Fisioterapia Neurofuncional (ABRAFIN) em parceria com o COFFITO. Sua atuação clínica é pautada em rigor técnico, atualização científica constante e abordagem centrada no paciente.
+              A Dra. Mariana Fernandes Barcellos é fisioterapeuta graduada pela Faculdade Estácio de Sá e pós-graduada em Fisioterapia Neurofuncional adulto e infantil, com título reconhecido pela Associação Brasileira de Fisioterapia Neurofuncional (ABRAFIN) em parceria com o COFFITO. Sua atuação clínica é pautada em rigor técnico, atualização científica constante e abordagem centrada no paciente.
             </p>
             
             <p className="text-base xl:text-lg mb-6 xl:mb-8 max-w-[600px] leading-relaxed">
-              Com experiência em reabilitação neurológica de pacientes de todas as idades, Mariana dedica-se à recuperação funcional de indivíduos com disfunções do sistema nervoso central e periférico, promovendo melhora da mobilidade, autonomia e qualidade de vida. Sua conduta integra avaliação precisa, intervenção baseada em evidências e um olhar humano que valoriza a singularidade de cada caso.
+              Com experiência em reabilitação neurológica infantil e juvenil, Mariana atua de forma preventiva, curativa, adaptativa ou paliativa nas sequelas resultantes de danos ao Sistema Nervoso, abrangendo tanto o <em>Sistema nervoso central</em> como o <em>Periférico</em> promovendo melhora da mobilidade, autonomia e qualidade de vida. Sua conduta integra avaliação precisa, intervenção baseada em evidências e um olhar humano que valoriza a singularidade de cada caso.
             </p>
             
             <p className="text-base xl:text-lg mb-8 xl:mb-8 max-w-[600px] leading-relaxed">
