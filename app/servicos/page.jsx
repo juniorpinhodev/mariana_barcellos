@@ -75,7 +75,8 @@ const Servicos = () => {
                 <h3 className="text-xl xl:text-2xl">Pilates</h3>
               </div>
               <p className="xl:pl-6 text-[13px] xl:text-[15px] text-center xl:text-left leading-relaxed">
-                Pilates solo e com equipamentos para fortalecimento muscular, melhora da postura, alívio de dores e qualidade de vida.
+                Pilates solo visa melhorar a postura, o equilíbrio, a coordenação motora e a consciência corporal, além de promover o fortalecimento muscular, flexibilidade, relaxamento e alívio de dores. 
+                O Pilates oferece diversos benefícios para o corpo e a mente, promovendo saúde, bem-estar e qualidade de vida.
               </p>
             </div>
           </div>
