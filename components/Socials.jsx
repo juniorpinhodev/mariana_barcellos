@@ -15,14 +15,23 @@ const Socials = ({ containerStyles }) => {
         </li>
         <li>
             <Link 
+                href="https://www.instagram.com/fisiomarianafbarcellos" 
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                <FaInstagram/>
+            </Link>
+        </li>
+        {/* <li>
+            <Link 
                 href="https://www.facebook.com/mariana.fernandes.barcellos"
                 target="_blank"
                 rel="noopener noreferrer"
                 >
                 <FaFacebook />
             </Link>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
             <Link 
                 href="/"
                 target="_blank"
@@ -30,16 +39,7 @@ const Socials = ({ containerStyles }) => {
                 >
                 <FaYoutube />
             </Link>
-        </li>
-        <li>
-            <Link 
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                <FaTwitter />
-            </Link>
-        </li>
+        </li> */}
     </ul>
   )
 }

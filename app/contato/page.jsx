@@ -49,8 +49,6 @@ const contato = () => {
                 <div>
                   <h4 className="h4 mb-2">Endereço</h4>
                   <p className="leading-relaxed">
-                   Rua Jornalista Bento Silverio, 788
-                    <br />
                     Ponte do Imaruim - Palhoça, SC
                   </p>
                 </div>
