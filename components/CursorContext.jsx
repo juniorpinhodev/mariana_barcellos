@@ -44,7 +44,7 @@ const CursorProvider = ({ children }) => {
     }
     
     return (
-        <CursorContext.Provider value={{ mouseEnterHandler, mouseLeaveHandler}}>
+        <CursorContext.Provider value={{ mouseEnterHandler, mouseLeaveHandler }}>
             <motion.div 
                 className="fixed z-[99] rounded-full pointer-events-none transition-all duration-300"
                 style={{
