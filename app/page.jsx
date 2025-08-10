@@ -35,7 +35,7 @@ const Home = () => {
               onMouseEnter={mouseEnterHandler}
               onMouseLeave={mouseLeaveHandler} 
               className="lead max-w-xl mx-auto text-[14px] sm:text-[16px] md:text-[18px] xl:text-[20px] leading-relaxed">
-              Recupere sua mobilidade e qualidade de vida com tratamentos eficazes e personalizados
+              Cuidando do desenvolvimento neuropsicomotor e da autonomia das crianças com carinho, ciência e dedicação.
             </motion.p>
             <div className="flex flex-col xl:flex-row items-center gap-6 max-w-max mx-auto xl:mx-0">
               <motion.button
@@ -49,7 +49,8 @@ const Home = () => {
                 onMouseEnter={mouseEnterHandler}
                 onMouseLeave={mouseLeaveHandler}
               >
-                <ModalVideo />
+                {/* 
+                 */}
               </motion.div>
             </div>
           </motion.div>

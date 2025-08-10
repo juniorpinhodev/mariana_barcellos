@@ -42,7 +42,7 @@ const Servicos = () => {
                 <h3 className="text-xl xl:text-2xl">Fisioterapia</h3>
               </div>
               <p className="xl:pl-6 text-[13px] xl:text-[15px] text-center xl:text-left leading-relaxed">
-                Atendimento fisioterapêutico domiciliar pediátrico. 
+                Atendimento fisioterapêutico neuropediátrico domiciliar. 
               </p>
             </div>
 
@@ -82,7 +82,7 @@ const Servicos = () => {
           </div>
 
           {/* botão */}
-          <button className="bg-accent min-w-[150px] xl:min-w-[178px] rounded-tl-[30px] rounded-bl-[30px] rounded-tr-[4px] rounded-br-[24px] font-primary uppercase tracking-[1px] h-[48px] xl:h-[58px] pl-6 xl:pl-8 pr-4 xl:pr-6 flex items-center justify-center text-white text-sm xl:text-base">Saiba Mais</button>
+          {/* <button className="bg-accent min-w-[150px] xl:min-w-[178px] rounded-tl-[30px] rounded-bl-[30px] rounded-tr-[4px] rounded-br-[24px] font-primary uppercase tracking-[1px] h-[48px] xl:h-[58px] pl-6 xl:pl-8 pr-4 xl:pr-6 flex items-center justify-center text-white text-sm xl:text-base">Saiba Mais</button> */}
         </motion.div>
 
         {/* imagem - apenas desktop */}

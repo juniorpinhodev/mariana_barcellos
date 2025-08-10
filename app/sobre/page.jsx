@@ -47,10 +47,10 @@ const sobre = () => {
           }}
           className="flex flex-col items-center xl:items-start xl:max-w-[650px] text-center xl:text-left w-full">
             <h2 className="text-[32px] leading-[34px] xl:text-[48px] xl:leading-[54px] font-primary mb-4 xl:mb-6 max-w-[540px] xl:max-w-none">
-             Sobre a Dra. Mariana Fernandes Barcellos
+             Sobre a Mariana F. Barcellos
             </h2>
             <p className="text-base xl:text-lg mb-6 xl:mb-8 max-w-[600px] leading-relaxed">
-              A Dra. Mariana Fernandes Barcellos é fisioterapeuta graduada pela Faculdade Estácio de Sá e pós-graduada em Fisioterapia Neurofuncional adulto e infantil, com título reconhecido pela Associação Brasileira de Fisioterapia Neurofuncional (ABRAFIN) em parceria com o COFFITO. Sua atuação clínica é pautada em rigor técnico, atualização científica constante e abordagem centrada no paciente.
+              A Mariana Fernandes Barcellos é fisioterapeuta graduada pela Faculdade Estácio de Sá e pós-graduada em Fisioterapia Neurofuncional adulto e infantil, com título reconhecido pela Associação Brasileira de Fisioterapia Neurofuncional (ABRAFIN) em parceria com o COFFITO. Sua atuação clínica é pautada em rigor técnico, atualização científica constante e abordagem centrada no paciente.
             </p>
             
             <p className="text-base xl:text-lg mb-6 xl:mb-8 max-w-[600px] leading-relaxed">

@@ -97,7 +97,7 @@ const contato = () => {
                 <div>
                   <h4 className="h4 mb-2">Email</h4>
                   <div className="flex flex-col gap-1">
-                    <p>mariespacovip@outlook.com</p>
+                    <p>fisio.marianafbarcellos@outlook.com</p>
                   </div>
                 </div>
               </div>
