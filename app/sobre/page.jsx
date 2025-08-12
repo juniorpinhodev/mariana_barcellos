@@ -14,7 +14,8 @@ const sobre = () => {
       className="flex items-center overflow-x-hidden pt-[150px]"
     >
       <div className="container mx-auto flex pb-12 xl:pb-0 px-4 xl:px-0">
-        <div className="w-full h-full flex flex-col xl:flex-row justify-between gap-8 xl:gap-0 flex-grow">
+        <div className="w-full h-full flex flex-col xl:flex-row items-center justify-between gap-8 xl:gap-0 flex-grow">
+          {/* imagem
           {/* imagem */}
           <motion.div 
           onMouseEnter={mouseEnterHandler}

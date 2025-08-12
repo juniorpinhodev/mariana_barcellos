@@ -95,7 +95,7 @@ const Servicos = () => {
           }}
           onMouseEnter={mouseEnterHandler}
           onMouseLeave={mouseLeaveHandler}
-          className="hidden xl:flex w-[384px] h-[534px] relative flex-shrink-0"
+          className="hidden xl:flex w-[384px] h-[534px] relative flex-shrink-0 mt-[100px]"
         >
           <Image
             src="/assets/servico/pedras.jpg"

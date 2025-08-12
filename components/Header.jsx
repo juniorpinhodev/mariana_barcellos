@@ -38,7 +38,11 @@ const Header = () => {
                             
                         </motion.div>
                         {/* Mídias sociais */}
-                        <div className='hidden xl:block'>
+                        <div
+                            onMouseEnter={mouseEnterHandler}
+                            onMouseLeave={mouseLeaveHandler}
+                            className='hidden xl:block'
+                        >
                             <Socials containerStyles='flex gap-6 text-white'/>
                         </div>
                     </div>
@@ -46,7 +50,10 @@ const Header = () => {
             </div>
             <div className="container mx-auto flex items-center p justify-between px-2">
                 {/* {logo} */}
-                <div>
+                <div
+                    onMouseEnter={mouseEnterHandler}
+                    onMouseLeave={mouseLeaveHandler}
+                >
                     <Link href="/">
                         <Image 
                         src="/assets/logo.png" 
