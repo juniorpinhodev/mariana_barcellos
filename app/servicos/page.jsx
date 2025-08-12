@@ -11,7 +11,7 @@ const Servicos = () => {
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { delay: 0.5 } }}
-      className="min-h-screen flex items-center overflow-x-hidden pt-[120px] xl:pt-0"
+      className="flex items-center overflow-x-hidden pt-[80px]"
     >
       <div className="container mx-auto flex flex-col xl:flex-row items-center justify-between gap-8 xl:gap-0">
         {/* texto */}

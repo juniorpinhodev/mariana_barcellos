@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import CursorProvider from "@/components/CursorContext";
 import Transition from "@/components/Transition";
 import PageTransition from "@/components/PageTransition";
+import Footer from "@/components/Footer"; // Import the Footer component
 
 
 const marcellus = Marcellus({
@@ -30,9 +31,12 @@ export default function RootLayout({ children }) {
         <CursorProvider>
           <Transition />
           <Header />
-          <PageTransition>
-            { children }
-          </PageTransition>
+          <div className="flex-grow">
+            <PageTransition>
+              { children }
+            </PageTransition>
+          </div>
+          <Footer />
         </CursorProvider>
       </body>
     </html>

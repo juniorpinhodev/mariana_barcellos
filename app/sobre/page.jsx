@@ -11,10 +11,10 @@ const sobre = () => {
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { delay: 2 } }}
-      className="min-h-screen flex items-center overflow-x-hidden"
+      className="flex overflow-x-hidden pt-[100px]"
     >
-      <div className="container mx-auto flex items-center pt-[140px] pb-12 xl:pt-32 xl:pb-0 px-4 xl:px-0">
-        <div className="w-full h-full flex flex-col xl:flex-row items-center justify-between gap-8 xl:gap-0">
+      <div className="container mx-auto flex pb-12 xl:pb-0 px-4 xl:px-0">
+        <div className="w-full h-full flex flex-col xl:flex-row justify-between gap-8 xl:gap-0 flex-grow">
           {/* imagem */}
           <motion.div 
           onMouseEnter={mouseEnterHandler}
