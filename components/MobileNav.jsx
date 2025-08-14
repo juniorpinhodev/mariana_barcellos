@@ -159,7 +159,7 @@ const MobileNav = ({ setMobileNav }) => {
                         const isActive = pathname === link.href;
                         return (
                             <motion.li key={index} variants={itemVariants}>
-                                <motion.Link 
+                                <Link 
                                     href={link.href} 
                                     className={`
                                         block px-4 py-4 rounded-xl text-lg font-secondary font-medium text-center
@@ -170,9 +170,6 @@ const MobileNav = ({ setMobileNav }) => {
                                         }
                                     `}
                                     onClick={() => setMobileNav(false)}
-                                    whileHover={{ scale: 1.02, x: 8 }}
-                                    whileTap={{ scale: 0.98 }}
-                                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
                                 >
                                     <motion.span 
                                         className="relative z-10 tracking-wide"
@@ -190,7 +187,7 @@ const MobileNav = ({ setMobileNav }) => {
                                             transition={{ type: "spring", stiffness: 400 }}
                                         />
                                     )}
-                                </motion.Link>
+                                </Link>
                             </motion.li>
                         );
                     })}
