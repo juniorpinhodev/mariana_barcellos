@@ -13,12 +13,14 @@ module.exports = {
           DEFAULT: "#473936",
         },
         secondary: {
-          DEFAULT: "#fff", 
-          100: "#cea39c",
+          DEFAULT: "#f8f7f4", //ok
+          100: "#fce8f1", //Barra posts instagram
+          200: "#fddffb", //Artes Instagram
+          300: "#bf7083" //Logo
         },
         accent: {
-          DEFAULT: "#f19687",
-          100: "#40aaab",
+          DEFAULT: "#c06dbd", //ok 
+          100: "#3cacad", //ok
         },
       },
       fontFamily: {

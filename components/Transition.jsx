@@ -27,7 +27,7 @@ const Transition = () => {
                     duration: 0.6,
                     ease: "easeInOut",
                     delay: 0.2
-                }} className="w-full h-full bg-[#e2cfbd] relative" />
+                }} className="w-full h-full bg-accent-100/70 relative" />
             </div>
         </div>
     </AnimatePresence>
