@@ -91,7 +91,7 @@ const sobre = () => {
               href="https://wa.me/5548984465676?text=Olá%2C%20gostaria%20de%20mais%20informações." 
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-accent min-w-[160px] xl:min-w-[178px] rounded-tl-[30px] rounded-bl-[30px] rounded-tr-[4px] rounded-br-[24px] font-primary uppercase tracking-[1px] h-[50px] xl:h-[58px] pl-6 xl:pl-8 pr-5 xl:pr-6 flex items-center justify-center text-white text-sm xl:text-base"
+              className="relative -mt-6 bg-accent min-w-[160px] xl:min-w-[178px] rounded-tl-[30px] rounded-bl-[30px] rounded-tr-[4px] rounded-br-[24px] font-primary uppercase tracking-[1px] h-[50px] xl:h-[58px] pl-6 xl:pl-8 pr-5 xl:pr-6 flex items-center justify-center text-white text-sm xl:text-base"
             >
               Entre em Contato
             </a>
