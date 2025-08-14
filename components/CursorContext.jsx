@@ -45,18 +45,20 @@ const CursorProvider = ({ children }) => {
     
     return (
         <CursorContext.Provider value={{ mouseEnterHandler, mouseLeaveHandler }}>
-            <motion.div 
-                className="fixed z-[99] rounded-full pointer-events-none transition-all duration-300"
-                style={{
-                    left: springX,
-                    top: springY,
-                    width: cursor.size,
-                    height: cursor.size,
-                    backgroundColor: cursor.background,
-                    mixBlendMode: isHovering ? "hard-light" : "normal",
-                    transition: "width 0.2s ease-in-out, height 0.2s ease-in-out",
-                }}
-            />        
+            {!smallViewportIsActive && (
+                <motion.div 
+                    className="fixed z-[99] rounded-full pointer-events-none transition-all duration-300"
+                    style={{
+                        left: springX,
+                        top: springY,
+                        width: cursor.size,
+                        height: cursor.size,
+                        backgroundColor: cursor.background,
+                        mixBlendMode: isHovering ? "hard-light" : "normal",
+                        transition: "width 0.2s ease-in-out, height 0.2s ease-in-out",
+                    }}
+                />
+            )}
             { children }
         </CursorContext.Provider>
     );

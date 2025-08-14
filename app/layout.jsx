@@ -5,7 +5,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import CursorProvider from "@/components/CursorContext";
 import Transition from "@/components/Transition";
-import PageTransition from "@/components/PageTransition";
+
 import Footer from "@/components/Footer"; // Import the Footer component
 
 
@@ -23,18 +23,15 @@ const montserrat = Montserrat({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-br" className="h-screen">
+    <html lang="pt-br">
       <body 
-      className={`${marcellus.variable} ${montserrat.variable} 
-      overflow-x-hidden`}
+      className={`${marcellus.variable} ${montserrat.variable}`}
       >
         <CursorProvider>
           <Transition />
           <Header />
           <div className="flex-grow">
-            <PageTransition>
-              { children }
-            </PageTransition>
+            { children }
           </div>
           <Footer />
         </CursorProvider>

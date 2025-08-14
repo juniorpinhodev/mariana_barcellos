@@ -4,10 +4,10 @@
 
 @layer base {
   html, body {
-    height: 100%;
+    overflow-x: hidden;
   }
   body {
-    @apply font-secondary bg-secondary text-base text-primary-100 flex flex-col;
+    @apply font-secondary bg-secondary text-base text-primary-100 flex flex-col min-h-screen;
   }
   h1,
   h2,
