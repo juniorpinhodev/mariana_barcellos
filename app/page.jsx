@@ -72,7 +72,7 @@ const Home = () => {
                 width={864} 
                 height={650}
                 quality={100}
-                alt="Foto de Doutora Mariana F. Barcellos" 
+                alt="Foto de Mariana F. Barcellos" 
                 /> */}
             </motion.div>
           </div>
