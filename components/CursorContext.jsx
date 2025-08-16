@@ -8,7 +8,7 @@ export const CursorContext = createContext();
 
 //Criar o provedor do contexto
 const CursorProvider = ({ children }) => {
-    const [cursor, setCursor] = useState({ size: 30, background: "#c06dbd80" });
+    const [cursor, setCursor] = useState({ size: 30, background: "#f8d6decc" });
     const [isHovering, setIsHovering] = useState(false);
     const smallViewportIsActive = useMediaQuery({ query: "(max-width: 1200px)" });
 
@@ -34,12 +34,12 @@ const CursorProvider = ({ children }) => {
     }, [cursor]);
 
     const mouseEnterHandler = () => {
-        setCursor({ size: 90, background: "#c06dbd80" });
+        setCursor({ size: 90, background: "#f8d6decc" });
         setIsHovering(true);
     };
 
     const mouseLeaveHandler = () => {
-        setCursor({ size: 30, background: "#c06dbd80" });
+        setCursor({ size: 30, background: "#f8d6decc" });
         setIsHovering(false);
     }
     
@@ -54,7 +54,7 @@ const CursorProvider = ({ children }) => {
                         width: cursor.size,
                         height: cursor.size,
                         backgroundColor: cursor.background,
-                        mixBlendMode: isHovering ? "hard-light" : "normal",
+                        mixBlendMode: isHovering ? "multiply" : "normal",
                         transition: "width 0.2s ease-in-out, height 0.2s ease-in-out",
                     }}
                 />

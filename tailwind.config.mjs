@@ -10,18 +10,16 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#3cacadE5",
-          100 : '#3b2f2f'
+          DEFAULT: "#3cacadE5", //verde COM Opacidade
+          100 : '#3b2f2f' //fonts
         },
         secondary: {
-          DEFAULT: "#f8f7f4", //ok
-          100: "#fce8f1", //Barra posts instagram
-          200: "#fddffb", //Artes Instagram
-          300: "#bf7083" //Logo
+          DEFAULT: "#f8f7f4", // Branco UI/UX
+          100: "#f8d6de80", // Mari via canva
         },
         accent: {
-          DEFAULT: "#c06dbd", //ok 
-          100: "#3cacad", //ok
+          DEFAULT: "#da9dab", // Mari via canva
+          100: "#3cacad", // Verde
         },
       },
       fontFamily: {
