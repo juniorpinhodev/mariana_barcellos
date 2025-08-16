@@ -116,10 +116,10 @@ const contato = () => {
               transition: { delay: 2.4, duration: 0.8, ease: "easeInOut" }
             }}
             className="flex-1">
-            <div className="bg-secondary-100 w-full max-w-[580px] gap-4 p-10 mx-auto xl:mx-0 rounded-[10px]"
+            <div className="w-full max-w-[580px] gap-4 p-10 mx-auto xl:mx-0 rounded-[10px]" //add bg-secondary-100 
             >
-              <h3 className="h3 mb-8 text-center">Receba informações</h3>
-              <Form />
+              {/* <h3 className="h3 mb-8 text-center">Receba informações</h3> */}
+              {/* <Form /> */}
             </div>
           </motion.div>
         </div>
