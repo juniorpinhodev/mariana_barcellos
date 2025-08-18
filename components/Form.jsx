@@ -13,6 +13,7 @@ const Form = () => {
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
+  const [submitMessage, setSubmitMessage] = useState(''); // New state for custom messages
 
   // Initialize EmailJS once when the component mounts
   useEffect(() => {
@@ -49,18 +50,14 @@ const Form = () => {
     if (validateForm()) {
       setIsSubmitting(true);
       setSubmitStatus(null);
+      setSubmitMessage(''); // Clear previous messages
 
       // 1. Enviar email com EmailJS
       try {
-        console.log("Service ID:", process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID); // Uncommented
-        console.log("Template ID:", process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID); // Uncommented
-        console.log("Public Key:", process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY); // Uncommented
-
         await emailjs.sendForm(
           process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
           process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
           form.current
-          // Public key is now initialized globally, so no need to pass it here
         );
 
         // 2. Enviar para a API para salvar no Google Sheets
@@ -76,21 +73,28 @@ const Form = () => {
             }),
           });
 
-          if (!response.ok) {
-            throw new Error('Falha ao salvar no Google Sheets');
+          const data = await response.json(); // Parse response JSON
+
+          // Always show success if email was sent, regardless of sheets outcome for duplicates
+          if (response.ok || response.status === 409) { // Treat 409 as success for user feedback
+            setSubmitStatus('success');
+            setSubmitMessage('Mensagem enviada com sucesso!');
+            setFormData({ name: '', email: '', phone: '', message: '' });
+          } else { // Other errors from API
+            setSubmitStatus('error');
+            setSubmitMessage(data.message || 'Erro ao enviar mensagem. Por favor, tente novamente mais tarde.');
           }
-          
-          setSubmitStatus('success');
-          setFormData({ name: '', email: '', phone: '', message: '' });
 
         } catch (sheetsError) {
           console.error('Erro no Google Sheets:', sheetsError);
-          setSubmitStatus('sheets_error'); // Estado de erro específico
+          setSubmitStatus('error'); // Generic error for network/parsing issues
+          setSubmitMessage('Erro ao enviar mensagem. Por favor, tente novamente mais tarde.');
         }
 
       } catch (emailError) {
         console.error('Erro ao enviar email com EmailJS:', emailError);
         setSubmitStatus('email_error');
+        setSubmitMessage('Erro ao enviar email. Por favor, tente novamente mais tarde.');
       } finally {
         setIsSubmitting(false);
       }
@@ -148,13 +152,13 @@ const Form = () => {
         
         {submitStatus === 'success' && (
           <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4" role="alert">
-            <span className="block sm:inline">Mensagem enviada com sucesso!</span>
+            <span className="block sm:inline">{submitMessage}</span>
           </div>
         )}
         
-        {(submitStatus === 'error' || submitStatus === 'email_error' || submitStatus === 'sheets_error') && (
+        {(submitStatus === 'error' || submitStatus === 'email_error') && (
           <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
-            <span className="block sm:inline">Erro ao enviar mensagem. Por favor, tente novamente mais tarde.</span>
+            <span className="block sm:inline">{submitMessage}</span>
           </div>
         )}
         
