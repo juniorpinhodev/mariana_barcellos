@@ -167,7 +167,7 @@ const Form = () => {
           className="btn self-start" 
           disabled={isSubmitting}
         >
-            {isSubmitting ? 'Enviando...' : 'Envie a mensagem'}
+            {isSubmitting ? 'Enviando... Aguarde' : 'Envie a mensagem'}
         </button>
     </form>
   )
