@@ -23,7 +23,7 @@ const Transition = () => {
     <AnimatePresence mode="wait">
         <div key={pathname}>
             <div className="hidden xl:flex xl:h-screen xl:w-screen fixed top-0 left-0 right-0 pointer-events-none z-50">
-                <motion.div variants={animation} initial="initial" animate="animate" exit="exit" transition={{
+                <motion.div variants={animation} initial={false} animate="animate" exit="exit" transition={{
                     duration: 0.6,
                     ease: "easeInOut",
                     delay: 0.2
