@@ -104,6 +104,19 @@ const ContatoClient = () => {
               </div>
               {/* fim item email */}
 
+              {/* Google Maps Embed */}
+              <div className="w-full px-6 h-56 rounded-lg overflow-hidden mt-1">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113017.15615410428!2d-48.798934497830004!3d-27.6275863354394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952732f8333575b3%3A0x3b75a564699c43c!2sPalho%C3%A7a%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1694200000000"
+                  width="80%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+
             </div>
           </motion.div>
           {/* formulario */}
@@ -123,21 +136,6 @@ const ContatoClient = () => {
               <Form />
             </div>
           </motion.div>
-        </div>
-        {/* Google Maps Embed */}
-        <div className="mt-12">
-          <h3 className="h3 mb-8 text-center">Área de Atendimento</h3>
-          <div className="w-full h-[400px] rounded-lg overflow-hidden shadow-lg">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14117.39793958683!2d-48.6765336!3d-27.6443391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952732f8333575b3%3A0x3b75a564699c43c!2sPonte%20do%20Imaruim%2C%20Palho%C3%A7a%20-%20SC!5e0!3m2!1spt-BR!2sbr!4v1694200000000"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
         </div>
       </div>
 

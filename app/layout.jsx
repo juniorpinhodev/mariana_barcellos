@@ -53,10 +53,20 @@ export default function RootLayout({ children }) {
             "url": "https://www.marianafbarcellos.com",
             "telephone": "+5548984465676",
             "email": "fisio.marianafbarcellos@outlook.com",
-            "areaServed": {
-              "@type": "City",
-              "name": "Palhoça"
-            },
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Palhoça"
+              },
+              {
+                "@type": "City",
+                "name": "São José"
+              },
+              {
+                "@type": "City",
+                "name": "Florianópolis"
+              }
+            ],
             "sameAs": [
               "https://www.instagram.com/fisiomarianafbarcellos/"
             ],
