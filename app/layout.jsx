@@ -21,6 +21,15 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
+export const metadata = {
+  title: {
+    default: 'Mariana Barcellos | Fisioterapia e Pilates em Palhoça',
+    template: '%s | Mariana Barcellos Fisioterapia',
+  },
+  description: 'Fisioterapeuta em Palhoça, SC. Oferecendo Fisioterapia, Pilates, Terapias Integrativas e Massagens. Atendimento especializado para sua saúde e bem-estar.',
+  keywords: ['Fisioterapia em Palhoça', 'Pilates em Palhoça', 'Fisioterapeuta Palhoça', 'Drenagem Linfática Palhoça', 'Terapias Integrativas Palhoça', 'Mariana Barcellos'],
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
@@ -35,6 +44,26 @@ export default function RootLayout({ children }) {
           </div>
           <Footer />
         </CursorProvider>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Physiotherapy",
+            "name": "Mariana F. Barcellos Fisioterapeuta",
+            "url": "https://www.marianafbarcellos.com",
+            "telephone": "+5548984465676",
+            "email": "fisio.marianafbarcellos@outlook.com",
+            "areaServed": {
+              "@type": "City",
+              "name": "Palhoça"
+            },
+            "sameAs": [
+              "https://www.instagram.com/fisiomarianafbarcellos/"
+            ],
+            "image": "https://www.marianafbarcellos.com/icon.png",
+            "description": "Fisioterapeuta em Palhoça, SC, especializada em Fisioterapia Neurofuncional, Pilates, Terapias Integrativas e Massagens. Atendimento domiciliar e personalizado."
+          }) }}
+        />
       </body>
     </html>
   );
