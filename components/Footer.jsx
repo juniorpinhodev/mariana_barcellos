@@ -17,7 +17,7 @@ const Footer = () => {
             <p className="text-xs text-secondary/60">
               Desenvolvido por{' '}
               <Link
-                href="https://www.juniorpinho.dev"
+                href="https://www.juniorpinhodev.com.br"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent hover:text-accent/80 
