@@ -69,8 +69,8 @@ const Home = () => {
               >
               { <Image 
                 src={'/assets/home/Mariana F Barcellos.svg'}
-                width={900} 
-                height={650}
+                width={650} 
+                height={600}
                 quality={100}
                 alt="Foto de Mariana F. Barcellos" 
                 /> }
