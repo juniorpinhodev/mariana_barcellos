@@ -56,7 +56,7 @@ const Header = () => {
                 >
                     <Link href="/">
                         <Image 
-                        src="/assets/logo.png" 
+                        src="/assets/logo - Mariana F Barcellos.png" 
                         width={300}
                         height={20}
                         priority
