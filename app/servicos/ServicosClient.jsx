@@ -96,14 +96,15 @@ const ServicosClient = () => {
           }}
           onMouseEnter={mouseEnterHandler}
           onMouseLeave={mouseLeaveHandler}
-          className="hidden xl:flex w-[384px] h-[534px] relative flex-shrink-0 mt-[100px]"
+          className="relative w-[240px] h-[400px] xl:w-[383px] xl:h-[650px] mb-4 xl:mb-8 flex-shrink-0 overflow-hidden rounded-[10px]"
         >
           <Image
-            src="/assets/servico/pedras.jpg"
-            fill
+            src="/assets/servico/Massoterapia.jpeg"
+            width={756} 
+            height={1344}
             quality={100}
-            alt="Imagem de serviços"
-            className="object-contain"
+            alt="Fisioterapia"
+            className="object-cover w-full h-full"
           />
         </motion.div>
       </div>

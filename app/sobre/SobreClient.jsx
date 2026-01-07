@@ -27,13 +27,15 @@ const SobreClient = () => {
             x: 0,
             transition: { delay: 2, duration: 0.8, ease: "easeInOut" }
           }}
-          className="relative w-[240px] h-[320px] xl:w-[383px] xl:h-[534px] mb-4 xl:mb-8 flex-shrink-0">
+          className="relative w-[240px] h-[400px] xl:w-[383px] xl:h-[650px] mb-4 xl:mb-8 flex-shrink-0 overflow-hidden rounded-[10px]"
+          >
             <Image 
-              src="/assets/sobre/massagem2.jpg" 
-              fill 
-              quality={100} 
-              alt="" 
-              className="object-contain" 
+              src="/assets/sobre/Fisioterapia_Pediatrica.jpeg"
+              width={756} 
+              height={1344}
+              quality={100}
+              alt="Fisioterapia Pediatrica" 
+              className="object-cover w-full h-full" 
             />
           </motion.div>
           
