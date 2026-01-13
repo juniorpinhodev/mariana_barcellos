@@ -1,12 +1,17 @@
 "use client";
 import { motion } from "framer-motion";
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import { CursorContext } from "@/components/CursorContext";
 import Image from "next/image"
 import ModalVideo from "@/components/ModalVideo";
 
 const Home = () => {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -59,6 +64,7 @@ const Home = () => {
           </motion.div>
           {/* imagem */}
           <div className="flex-1">
+            {isClient && (
             <motion.div 
               initial={{ opacity: 0, bottom: '-100%' }}
               animate={{ 
@@ -68,16 +74,17 @@ const Home = () => {
               }}
               onMouseEnter={mouseEnterHandler}
               onMouseLeave={mouseLeaveHandler}
-              className="hidden xl:flex fixed bottom-0"
+              className="flex justify-center xl:justify-start xl:flex-row w-full xl:w-auto relative xl:fixed xl:bottom-0 mt-8 xl:mt-0"
               >
-              { <Image 
+              <Image 
                 src={'/assets/home/Mariana F Barcellos.svg'}
                 width={650} 
                 height={600}
                 quality={100}
                 alt="Foto de Mariana F. Barcellos" 
-                /> }
+                />
             </motion.div>
+            )}
           </div>
         </div>
       </div>

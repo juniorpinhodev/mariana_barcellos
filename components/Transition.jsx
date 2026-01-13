@@ -1,7 +1,8 @@
 "use client";
 
-import { AnimatePresence, animate, motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 //variants
 
@@ -19,8 +20,15 @@ const animation = {
 
 const Transition = () => {
     const pathname = usePathname();
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
+
   return <>
     <AnimatePresence mode="wait">
+        {isClient && (
         <div key={pathname}>
             <div className="hidden xl:flex xl:h-screen xl:w-screen fixed top-0 left-0 right-0 pointer-events-none z-50">
                 <motion.div variants={animation} initial={false} animate="animate" exit="exit" transition={{
@@ -30,6 +38,7 @@ const Transition = () => {
                 }} className="w-full h-full bg-accent-100/70 relative" />
             </div>
         </div>
+        )}
     </AnimatePresence>
   </>
 }
