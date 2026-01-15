@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect,createContext}from 'react';
+import React, { useState, useEffect, createContext } from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 import { useMediaQuery } from "react-responsive";
 
@@ -10,7 +10,13 @@ export const CursorContext = createContext();
 const CursorProvider = ({ children }) => {
     const [cursor, setCursor] = useState({ size: 30, background: "#f8d6decc" });
     const [isHovering, setIsHovering] = useState(false);
-    const smallViewportIsActive = useMediaQuery({ query: "(max-width: 1200px)" });
+    const [isClient, setIsClient] = useState(false);
+    
+    const isDesktop = useMediaQuery({ query: "(min-width: 1024px)" });
+
+    useEffect(() => {
+      setIsClient(true);
+    }, []);
 
     const mouseX = useMotionValue(0);
     const mouseY = useMotionValue(0);
@@ -20,32 +26,36 @@ const CursorProvider = ({ children }) => {
     const springY = useSpring(mouseY, springConfig);
 
     const handleMouseMove = (e) => {
-        if (!smallViewportIsActive) {
+        if (isDesktop) {
             mouseX.set(e.clientX - cursor.size / 2);
             mouseY.set(e.clientY - cursor.size / 2);
-        } else {
-            setCursor({ size: 0, background: "none" });
         }
     };
 
     useEffect(()=> {
-        window.addEventListener("mousemove", handleMouseMove);
+        if (isDesktop) {
+            window.addEventListener("mousemove", handleMouseMove);
+        }
         return () => window.removeEventListener("mousemove", handleMouseMove);
-    }, [cursor]);
+    }, [cursor, isDesktop]);
 
     const mouseEnterHandler = () => {
-        setCursor({ size: 90, background: "#f8d6decc" });
-        setIsHovering(true);
+        if (isDesktop) {
+            setCursor({ size: 90, background: "#f8d6decc" });
+            setIsHovering(true);
+        }
     };
 
     const mouseLeaveHandler = () => {
-        setCursor({ size: 30, background: "#f8d6decc" });
-        setIsHovering(false);
+        if (isDesktop) {
+            setCursor({ size: 30, background: "#f8d6decc" });
+            setIsHovering(false);
+        }
     }
     
     return (
         <CursorContext.Provider value={{ mouseEnterHandler, mouseLeaveHandler }}>
-            {!smallViewportIsActive && (
+            {isClient && isDesktop && (
                 <motion.div 
                     className="fixed z-[99] rounded-full pointer-events-none transition-all duration-300"
                     style={{
