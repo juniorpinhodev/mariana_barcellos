@@ -28,7 +28,7 @@ const Home = () => {
             y: 0, 
             transition: { delay:2, duration: 1, ease: "easeInOut"},
           }}
-          className="w-full text-center xl:text-left xl:w-[500px] pt-[10px] xl:pt-[120px]">
+          className="w-full text-center xl:text-left xl:w-[500px] pt-[20px] xl:pt-[120px]">
             <motion.h1 
             onMouseEnter={mouseEnterHandler}
             onMouseLeave={mouseLeaveHandler}
@@ -39,10 +39,10 @@ const Home = () => {
             <motion.p 
               onMouseEnter={mouseEnterHandler}
               onMouseLeave={mouseLeaveHandler} 
-              className="lead max-w-xl mx-auto text-[14px] sm:text-[14px] md:text-[16px] xl:text-[16px] leading-relaxed">
+              className="lead max-w-xl mx-auto text-[14px] sm:text-[14px] md:text-[16px] xl:text-[16px] pt-[24px] leading-relaxed">
               Fisioterapia Neurofuncional baseada em evidências científicas para impulsionar marcos motores, autonomia e qualidade de vida de crianças com T21. Um olhar especializado para transformar o potencial em conquistas reais.
             </motion.p>
-            <div className="flex flex-col xl:flex-row items-center gap-6 max-w-max mx-auto xl:mx-0">
+            <div className="flex flex-col xl:flex-row items-center gap-1 max-w-max mx-auto xl:mx-0">
               <motion.a
               href="https://wa.me/5548984465676?text=Olá!%20Eu%20gostaria%20de%20agendar%20uma%20avaliação."
               onMouseEnter={mouseEnterHandler}
