@@ -42,7 +42,7 @@ const Home = () => {
               className="lead max-w-xl mx-auto text-[14px] sm:text-[14px] md:text-[16px] xl:text-[16px] pt-[24px] leading-relaxed">
               Fisioterapia Neurofuncional baseada em evidências científicas para impulsionar marcos motores, autonomia e qualidade de vida de crianças com T21. Um olhar especializado para transformar o potencial em conquistas reais.
             </motion.p>
-            <div className="flex flex-col xl:flex-row items-center gap-1 max-w-max mx-auto xl:mx-0">
+            <div className="flex flex- xl:flex-row items-center max-w-max mx-auto xl:mx-0">
               <motion.a
               href="https://wa.me/5548984465676?text=Olá!%20Eu%20gostaria%20de%20agendar%20uma%20avaliação."
               onMouseEnter={mouseEnterHandler}
@@ -77,13 +77,12 @@ const Home = () => {
               className="flex justify-center xl:justify-start xl:flex-row w-full xl:w-auto relative xl:fixed xl:bottom-0 mt-8 xl:mt-0"
               >
               <Image 
-                                                src={'/assets/home/Mariana F Barcellos.svg'}
-                                                width={650}
-                                                height={600}
-                                                quality={100}
-                                                alt="Foto de Mariana F. Barcellos"
-                                                className="w-4/5 h-auto md:w-[650px] md:h-[600px]"
-                                                />
+                src={'/assets/home/Mariana F Barcellos.svg'}
+                width={650} 
+                height={600}
+                quality={100}
+                alt="Foto de Mariana F. Barcellos" 
+                />
             </motion.div>
             )}
           </div>
