@@ -4,9 +4,16 @@ import { useContext } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { CursorContext } from "@/components/CursorContext";
+import useEmblaCarousel from 'embla-carousel-react';
 
 const ServicosClient = () => {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
+  const [emblaRef] = useEmblaCarousel({ loop: true });
+
+  const images = [
+    '/assets/servico/Massoterapia.jpeg',
+    '/assets/servico/Fisioterapia_Pediatrica.jpeg'
+  ];
 
   return (
     <motion.section
@@ -43,7 +50,7 @@ const ServicosClient = () => {
                 <h3 className="text-xl xl:text-2xl">Fisioterapia</h3>
               </div>
               <p className="xl:pl-6 text-[13px] xl:text-[15px] text-center xl:text-left leading-relaxed">
-                Atendimento fisioterapêutico neuropediátrico domiciliar. 
+                Atendimento fisioterapêutico neuropediátrico domiciliar.
               </p>
             </div>
 
@@ -76,7 +83,7 @@ const ServicosClient = () => {
                 <h3 className="text-xl xl:text-2xl">Pilates</h3>
               </div>
               <p className="xl:pl-6 text-[13px] xl:text-[15px] text-center xl:text-left leading-relaxed">
-                Pilates solo visa melhorar a postura, o equilíbrio, a coordenação motora e a consciência corporal, além de promover o fortalecimento muscular, flexibilidade, relaxamento e alívio de dores. 
+                Pilates solo visa melhorar a postura, o equilíbrio, a coordenação motora e a consciência corporal, além de promover o fortalecimento muscular, flexibilidade, relaxamento e alívio de dores.
                 O Pilates oferece diversos benefícios para o corpo e a mente, promovendo saúde, bem-estar e qualidade de vida.
               </p>
             </div>
@@ -86,7 +93,7 @@ const ServicosClient = () => {
           {/* <button className="bg-accent min-w-[150px] xl:min-w-[178px] rounded-tl-[30px] rounded-bl-[30px] rounded-tr-[4px] rounded-br-[24px] font-primary uppercase tracking-[1px] h-[48px] xl:h-[58px] pl-6 xl:pl-8 pr-4 xl:pr-6 flex items-center justify-center text-white text-sm xl:text-base">Saiba Mais</button> */}
         </motion.div>
 
-        {/* imagem - apenas desktop */}
+        {/* carrossel de imagens */}
         <motion.div
           initial={{ opacity: 0, x: 60 }}
           animate={{
@@ -96,16 +103,23 @@ const ServicosClient = () => {
           }}
           onMouseEnter={mouseEnterHandler}
           onMouseLeave={mouseLeaveHandler}
+          ref={emblaRef}
           className="relative w-[240px] h-[400px] xl:w-[383px] xl:h-[650px] mb-4 xl:mb-8 flex-shrink-0 overflow-hidden rounded-[10px]"
         >
-          <Image
-            src="/assets/servico/Massoterapia.jpeg"
-            width={756} 
-            height={1344}
-            quality={100}
-            alt="Fisioterapia"
-            className="object-cover w-full h-full"
-          />
+          <div className="flex h-full">
+            {images.map((src, index) => (
+              <div className="flex-grow-0 flex-shrink-0 basis-full h-full" key={index}>
+                <Image
+                  src={src}
+                  width={756}
+                  height={1344}
+                  quality={100}
+                  alt={`Serviço ${index + 1}`}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+            ))}
+          </div>
         </motion.div>
       </div>
     </motion.section>
