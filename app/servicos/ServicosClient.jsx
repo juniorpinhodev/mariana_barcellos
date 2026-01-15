@@ -63,65 +63,108 @@ const ServicosClient = () => {
           <h2 className="h2 text-[34px] sm:text-[36px] md:text-[38px] xl:text-[40px] mb-2 xl:mb-4 max-w-[540px] xl:max-w-none px-4 xl:px-0">
             Nossos Serviços
           </h2>
-          <p className="lead max-w-[600px] mb-6 xl:mb-16 px-4 xl:px-0 text-base xl:text-lg">
+          <p className="lead max-w-[600px] mb-12 xl:mb-16 px-4 xl:px-0 text-base xl:text-lg">
             Oferecemos serviços especializados para cuidar da sua saúde, bem-estar físico, emocional e energético.
           </p>
 
           {/* itens */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 xl:gap-[20px] mb-8 xl:mb-14 w-full px-4 xl:px-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-[20px] mb-8 xl:mb-14 w-full px-4 xl:px-0">
             {/* Fisioterapia */}
             <div 
-              className="flex flex-col justify-center items-center xl:items-start cursor-pointer"
+              className="flex flex-row items-center gap-4 md:flex-col md:items-start cursor-pointer"
               onMouseEnter={() => handleMouseEnterService('fisioterapia')}
               onMouseLeave={handleMouseLeaveService}
             >
-              <div className="flex items-center gap-[12px] mb-2 w-full justify-center xl:justify-start">
-                <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px] flex-shrink-0"></div>
-                <h3 className="text-xl xl:text-2xl">Fisioterapia</h3>
+              <div className="relative w-24 h-24 md:hidden flex-shrink-0">
+                <Image 
+                  src="/assets/servico/Fisioterapia_Pediatrica.jpeg" 
+                  layout="fill" 
+                  objectFit="cover" 
+                  className="rounded-lg"
+                  alt="Fisioterapia Pediátrica" 
+                />
               </div>
-              <p className="xl:pl-6 text-[13px] xl:text-[15px] text-center xl:text-left leading-relaxed">
-                Atendimento fisioterapêutico neuropediátrico domiciliar. 
-              </p>
+              <div className="flex-1">
+                <div className="flex items-center gap-[12px] mb-2 w-full justify-start">
+                  <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px] flex-shrink-0"></div>
+                  <h3 className="text-xl xl:text-2xl">Fisioterapia</h3>
+                </div>
+                <p className="md:pl-6 text-[13px] xl:text-[15px] text-left leading-relaxed">
+                  Atendimento fisioterapêutico neuropediátrico domiciliar. 
+                </p>
+              </div>
             </div>
 
             {/* Terapias Integrativas */}
-            <div className="flex flex-col justify-center items-center xl:items-start">
-              <div className="flex items-center gap-[12px] mb-2 w-full justify-center xl:justify-start">
-                <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px] flex-shrink-0"></div>
-                <h3 className="text-xl xl:text-2xl">Terapias Integrativas</h3>
+            <div className="flex flex-row items-center gap-4 md:flex-col md:items-start">
+              <div className="relative w-24 h-24 md:hidden flex-shrink-0">
+                <Image 
+                  src="/assets/logo2.png"
+                  layout="fill" 
+                  objectFit="contain" 
+                  className="rounded-lg"
+                  alt="Logo" 
+                />
               </div>
-              <p className="xl:pl-6 text-[13px] xl:text-[15px] text-center xl:text-left leading-relaxed">
-                Auriculoterapia (inclusive em bebês), Barra de Access, Cone Chinês e Reiki (para pessoas e pets).
-              </p>
+              <div className="flex-1">
+                <div className="flex items-center gap-[12px] mb-2 w-full justify-start">
+                  <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px] flex-shrink-0"></div>
+                  <h3 className="text-xl xl:text-2xl">Terapias Integrativas</h3>
+                </div>
+                <p className="md:pl-6 text-[13px] xl:text-[15px] text-left leading-relaxed">
+                  Auriculoterapia (inclusive em bebês), Barra de Access, Cone Chinês e Reiki (para pessoas e pets).
+                </p>
+              </div>
             </div>
 
             {/* Massagens */}
             <div 
-              className="flex flex-col justify-center items-center xl:items-start cursor-pointer"
+              className="flex flex-row items-center gap-4 md:flex-col md:items-start cursor-pointer"
               onMouseEnter={() => handleMouseEnterService('massagens')}
               onMouseLeave={handleMouseLeaveService}
             >
-              <div className="flex items-center gap-[12px] mb-2 w-full justify-center xl:justify-start">
-                <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px] flex-shrink-0"></div>
-                <h3 className="text-xl xl:text-2xl">Massagens</h3>
+              <div className="relative w-24 h-24 md:hidden flex-shrink-0">
+                <Image 
+                  src="/assets/servico/Massoterapia.jpeg" 
+                  layout="fill" 
+                  objectFit="cover" 
+                  className="rounded-lg"
+                  alt="Massoterapia" 
+                />
               </div>
-              <p className="xl:pl-6 text-[13px] xl:text-[15px] text-center xl:text-left leading-relaxed">
-                Drenagem linfática (corporal e facial), massagem relaxante, massagem relaxante com pedras quentes e massagem relaxante com ventosas.
-              </p>
+              <div className="flex-1">
+                <div className="flex items-center gap-[12px] mb-2 w-full justify-start">
+                  <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px] flex-shrink-0"></div>
+                  <h3 className="text-xl xl:text-2xl">Massagens</h3>
+                </div>
+                <p className="md:pl-6 text-[13px] xl:text-[15px] text-left leading-relaxed">
+                  Drenagem linfática (corporal e facial), massagem relaxante, massagem relaxante com pedras quentes e massagem relaxante com ventosas.
+                </p>
+              </div>
             </div>
 
-            {/* Pilates */}
-            <div className="flex flex-col justify-center items-center xl:items-start">
-              <div className="flex items-center gap-[12px] mb-2 w-full justify-center xl:justify-start">
-                <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px] flex-shrink-0"></div>
-                <h3 className="text-xl xl:text-2xl">Pilates</h3>
-              </div>
-              <p className="xl:pl-6 text-[13px] xl:text-[15px] text-center xl:text-left leading-relaxed">
-                Pilates solo visa melhorar a postura, o equilíbrio, a coordenação motora e a consciência corporal, além de promover o fortalecimento muscular, flexibilidade, relaxamento e alívio de dores. 
-                O Pilates oferece diversos benefícios para o corpo e a mente, promovendo saúde, bem-estar e qualidade de vida.
-              </p>
-            </div>
-          </div>
+                        {/* Pilates */}
+                        <div className="flex flex-row items-center gap-4 md:flex-col md:items-start">
+                          <div className="relative w-24 h-24 md:hidden flex-shrink-0">
+                            <Image 
+                              src="/assets/logo2.png"
+                              layout="fill" 
+                              objectFit="contain" 
+                              className="rounded-lg"
+                              alt="Logo" 
+                            />
+                          </div>
+                          <div className="flex-1">
+                            <div className="flex items-center gap-[12px] mb-2 w-full justify-start">
+                              <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px] flex-shrink-0"></div>
+                              <h3 className="text-xl xl:text-2xl">Pilates</h3>
+                            </div>
+                            <p className="md:pl-6 text-[13px] xl:text-[15px] text-left leading-relaxed">
+                              Pilates solo visa melhorar a postura, o equilíbrio, a coordenação motora e a consciência corporal, além de promover o fortalecimento muscular, flexibilidade, relaxamento e alívio de dores.
+                              O Pilates oferece diversos benefícios para o corpo e a mente, promovendo saúde, bem-estar e qualidade de vida.
+                            </p>
+                          </div>
+                        </div>          </div>
 
         </motion.div>
 
