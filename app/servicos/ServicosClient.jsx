@@ -11,7 +11,7 @@ const ServicosClient = () => {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
   
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-    Autoplay({ delay: 2000, stopOnInteraction: false, stopOnMouseEnter: false })
+    Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: false })
   ]);
 
   const images = [
