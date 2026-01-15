@@ -16,7 +16,8 @@ const ServicosClient = () => {
 
   const images = [
     '/assets/servico/Massoterapia.jpeg',
-    '/assets/servico/Fisioterapia_Pediatrica.jpeg'
+    '/assets/servico/Fisioterapia_Pediatrica.jpeg',
+    '/assets/servico/Terapias_integrativas.jpeg'
   ];
 
   const imagesMap = {
@@ -99,11 +100,11 @@ const ServicosClient = () => {
             <div className="flex flex-row items-center gap-4 md:flex-col md:items-start">
               <div className="relative w-24 h-24 md:hidden flex-shrink-0">
                 <Image 
-                  src="/assets/logo2.png"
+                  src="/assets/servico/Terapias_integrativas.jpeg"
                   layout="fill" 
-                  objectFit="contain" 
+                  objectFit="cover" 
                   className="rounded-lg"
-                  alt="Logo" 
+                  alt="Terapias integrativas" 
                 />
               </div>
               <div className="flex-1">
