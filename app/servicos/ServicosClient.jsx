@@ -23,6 +23,7 @@ const ServicosClient = () => {
   const imagesMap = {
     fisioterapia: 1,
     massagens: 0,
+    terapiasIntegrativas: 2,
   };
 
   const handleMouseEnterService = useCallback((service) => {
@@ -97,7 +98,11 @@ const ServicosClient = () => {
             </div>
 
             {/* Terapias Integrativas */}
-            <div className="flex flex-row items-center gap-4 md:flex-col md:items-start">
+            <div 
+              className="flex flex-row items-center gap-4 md:flex-col md:items-start cursor-pointer"
+              onMouseEnter={() => handleMouseEnterService('terapiasIntegrativas')}
+              onMouseLeave={handleMouseLeaveService}
+            >
               <div className="relative w-24 h-24 md:hidden flex-shrink-0">
                 <Image 
                   src="/assets/servico/Terapias_integrativas.jpeg"

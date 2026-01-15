@@ -52,7 +52,7 @@ const WhatsAppButton = () => {
       }
     });
 
-    // Mantém a mesma frequência do shake
+    // Frequência do shake 
     const shakeInterval = setInterval(() => {
       shakeControls.start({
         rotate: [0, -25, 25, -25, 25, -20, 20, 0],
