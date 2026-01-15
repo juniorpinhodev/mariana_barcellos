@@ -1,19 +1,45 @@
 "use client";
 
-import { useContext } from "react";
+import { useContext, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { CursorContext } from "@/components/CursorContext";
 import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
 
 const ServicosClient = () => {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
-  const [emblaRef] = useEmblaCarousel({ loop: true });
+  
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: 2000, stopOnInteraction: false, stopOnMouseEnter: false })
+  ]);
 
   const images = [
     '/assets/servico/Massoterapia.jpeg',
     '/assets/servico/Fisioterapia_Pediatrica.jpeg'
   ];
+
+  const imagesMap = {
+    fisioterapia: 1,
+    massagens: 0,
+  };
+
+  const handleMouseEnterService = useCallback((service) => {
+    if (!emblaApi) return;
+    const autoplay = emblaApi.plugins().autoplay;
+    if (!autoplay) return;
+    
+    autoplay.stop();
+    emblaApi.scrollTo(imagesMap[service]);
+  }, [emblaApi]);
+
+  const handleMouseLeaveService = useCallback(() => {
+    if (!emblaApi) return;
+    const autoplay = emblaApi.plugins().autoplay;
+    if (!autoplay) return;
+    
+    autoplay.play();
+  }, [emblaApi]);
 
   return (
     <motion.section
@@ -44,13 +70,17 @@ const ServicosClient = () => {
           {/* itens */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 xl:gap-[20px] mb-8 xl:mb-14 w-full px-4 xl:px-0">
             {/* Fisioterapia */}
-            <div className="flex flex-col justify-center items-center xl:items-start">
+            <div 
+              className="flex flex-col justify-center items-center xl:items-start cursor-pointer"
+              onMouseEnter={() => handleMouseEnterService('fisioterapia')}
+              onMouseLeave={handleMouseLeaveService}
+            >
               <div className="flex items-center gap-[12px] mb-2 w-full justify-center xl:justify-start">
                 <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px] flex-shrink-0"></div>
                 <h3 className="text-xl xl:text-2xl">Fisioterapia</h3>
               </div>
               <p className="xl:pl-6 text-[13px] xl:text-[15px] text-center xl:text-left leading-relaxed">
-                Atendimento fisioterapêutico neuropediátrico domiciliar.
+                Atendimento fisioterapêutico neuropediátrico domiciliar. 
               </p>
             </div>
 
@@ -66,7 +96,11 @@ const ServicosClient = () => {
             </div>
 
             {/* Massagens */}
-            <div className="flex flex-col justify-center items-center xl:items-start">
+            <div 
+              className="flex flex-col justify-center items-center xl:items-start cursor-pointer"
+              onMouseEnter={() => handleMouseEnterService('massagens')}
+              onMouseLeave={handleMouseLeaveService}
+            >
               <div className="flex items-center gap-[12px] mb-2 w-full justify-center xl:justify-start">
                 <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px] flex-shrink-0"></div>
                 <h3 className="text-xl xl:text-2xl">Massagens</h3>
@@ -83,14 +117,12 @@ const ServicosClient = () => {
                 <h3 className="text-xl xl:text-2xl">Pilates</h3>
               </div>
               <p className="xl:pl-6 text-[13px] xl:text-[15px] text-center xl:text-left leading-relaxed">
-                Pilates solo visa melhorar a postura, o equilíbrio, a coordenação motora e a consciência corporal, além de promover o fortalecimento muscular, flexibilidade, relaxamento e alívio de dores.
+                Pilates solo visa melhorar a postura, o equilíbrio, a coordenação motora e a consciência corporal, além de promover o fortalecimento muscular, flexibilidade, relaxamento e alívio de dores. 
                 O Pilates oferece diversos benefícios para o corpo e a mente, promovendo saúde, bem-estar e qualidade de vida.
               </p>
             </div>
           </div>
 
-          {/* botão */}
-          {/* <button className="bg-accent min-w-[150px] xl:min-w-[178px] rounded-tl-[30px] rounded-bl-[30px] rounded-tr-[4px] rounded-br-[24px] font-primary uppercase tracking-[1px] h-[48px] xl:h-[58px] pl-6 xl:pl-8 pr-4 xl:pr-6 flex items-center justify-center text-white text-sm xl:text-base">Saiba Mais</button> */}
         </motion.div>
 
         {/* carrossel de imagens */}
