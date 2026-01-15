@@ -77,12 +77,13 @@ const Home = () => {
               className="flex justify-center xl:justify-start xl:flex-row w-full xl:w-auto relative xl:fixed xl:bottom-0 mt-8 xl:mt-0"
               >
               <Image 
-                                src={'/assets/home/Mariana F Barcellos.svg'}
-                                quality={100}
-                                alt="Foto de Mariana F. Barcellos"
-                                className="w-4/5 h-auto xl:w-[650px] xl:h-[600px]"
-                 
-                />
+                                                src={'/assets/home/Mariana F Barcellos.svg'}
+                                                width={650}
+                                                height={600}
+                                                quality={100}
+                                                alt="Foto de Mariana F. Barcellos"
+                                                className="w-4/5 h-auto md:w-[650px] md:h-[600px]"
+                                                />
             </motion.div>
             )}
           </div>
