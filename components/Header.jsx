@@ -32,7 +32,6 @@ const Header = () => {
                             
                             {/* email */}
                             <div className='flex items-center gap-1 text-white text-[13px]'>
-                                <TbPhysotherapist />
                                 <span>FISIOTERAPEUTA&nbsp;|&nbsp;CREFITO - 10 &nbsp;|&nbsp;341816 - F</span>
                             </div>
                             

@@ -53,15 +53,15 @@ const SobreClient = () => {
             <h2 className="text-[32px] leading-[34px] xl:text-[48px] xl:leading-[54px] font-primary mb-4 xl:mb-6 max-w-[540px] xl:max-w-none">
              Sobre a Mariana F. Barcellos
             </h2>
-            <p className="text-base mb-6 xl:mb-8 max-w-[600px] leading-relaxed">
+            <p className="text-base mb-6 xl:mb-8 max-w-[600px] leading-relaxed xl:text-justify">
               A Mariana Fernandes Barcellos é fisioterapeuta graduada pela Faculdade Estácio de Sá e pós-graduada em Fisioterapia Neurofuncional adulto e infantil, com título reconhecido pela Associação Brasileira de Fisioterapia Neurofuncional (ABRAFIN) em parceria com o COFFITO. Sua atuação clínica é pautada em rigor técnico, atualização científica constante e abordagem centrada no paciente.
             </p>
             
-            <p className="text-base mb-6 xl:mb-8 max-w-[600px] leading-relaxed">
+            <p className="text-base mb-6 xl:mb-8 max-w-[600px] leading-relaxed xl:text-justify">
               Com experiência em reabilitação neurológica infantil e juvenil, Mariana atua de forma preventiva, curativa, adaptativa ou paliativa nas sequelas resultantes de danos ao Sistema Nervoso, abrangendo tanto o <em>Sistema nervoso central</em> como o <em>Periférico</em> promovendo melhora da mobilidade, autonomia e qualidade de vida. Sua conduta integra avaliação precisa, intervenção baseada em evidências e um olhar humano que valoriza a singularidade de cada caso.
             </p>
             
-            <p className="text-base mb-8 xl:mb-8 max-w-[600px] leading-relaxed">
+            <p className="text-base mb-8 xl:mb-8 max-w-[600px] leading-relaxed xl:text-justify">
               Ética, excelência clínica e compromisso com resultados sustentáveis definem sua prática profissional.
             </p>
             
