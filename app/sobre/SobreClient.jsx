@@ -30,7 +30,7 @@ const SobreClient = () => {
           className="relative w-[240px] h-[400px] xl:w-[383px] xl:h-[650px] mb-4 xl:mb-8 flex-shrink-0 overflow-hidden rounded-[10px]"
           >
             <Image 
-              src="/assets/sobre/Fisioterapia_Pediatrica.jpeg"
+              src="/assets/sobre/Mariana_f_barcellos.jpeg"
               width={756} 
               height={1344}
               quality={100}
