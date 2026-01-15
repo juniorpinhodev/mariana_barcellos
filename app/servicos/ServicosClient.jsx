@@ -89,7 +89,7 @@ const ServicosClient = () => {
                   <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px] flex-shrink-0"></div>
                   <h3 className="text-xl xl:text-2xl">Fisioterapia</h3>
                 </div>
-                <p className="md:pl-6 text-[13px] xl:text-[15px] text-left leading-relaxed xl:text-justify">
+                <p className="md:pl-6 text-[13px] xl:text-[15px] text-left leading-relaxed">
                   Atendimento fisioterapêutico neuropediátrico domiciliar. 
                 </p>
               </div>
@@ -111,7 +111,7 @@ const ServicosClient = () => {
                   <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px] flex-shrink-0"></div>
                   <h3 className="text-xl xl:text-2xl">Terapias Integrativas</h3>
                 </div>
-                <p className="md:pl-6 text-[13px] xl:text-[15px] text-left leading-relaxed xl:text-justify">
+                <p className="md:pl-6 text-[13px] xl:text-[15px] text-left leading-relaxed">
                   Auriculoterapia (inclusive em bebês), Barra de Access, Cone Chinês e Reiki (para pessoas e pets).
                 </p>
               </div>
@@ -137,7 +137,7 @@ const ServicosClient = () => {
                   <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px] flex-shrink-0"></div>
                   <h3 className="text-xl xl:text-2xl">Massagens</h3>
                 </div>
-                <p className="md:pl-6 text-[13px] xl:text-[15px] text-left leading-relaxed xl:text-justify">
+                <p className="md:pl-6 text-[13px] xl:text-[15px] text-left leading-relaxed">
                   Drenagem linfática (corporal e facial), massagem relaxante, massagem relaxante com pedras quentes e massagem relaxante com ventosas.
                 </p>
               </div>
@@ -159,7 +159,7 @@ const ServicosClient = () => {
                               <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px] flex-shrink-0"></div>
                               <h3 className="text-xl xl:text-2xl">Pilates</h3>
                             </div>
-                            <p className="md:pl-6 text-[13px] xl:text-[15px] text-left leading-relaxed xl:text-justify">
+                            <p className="md:pl-6 text-[13px] xl:text-[15px] text-left leading-relaxed">
                               Pilates solo visa melhorar a postura, o equilíbrio, a coordenação motora e a consciência corporal, além de promover o fortalecimento muscular, flexibilidade, relaxamento e alívio de dores.
                               O Pilates oferece diversos benefícios para o corpo e a mente, promovendo saúde, bem-estar e qualidade de vida.
                             </p>
