@@ -6,7 +6,8 @@ import Header from "@/components/Header";
 import CursorProvider from "@/components/CursorContext";
 import Transition from "@/components/Transition";
 
-import Footer from "@/components/Footer"; // Import the Footer component
+import WhatsAppButton from "@/components/WhatsAppButton";
+import Footer from "@/components/Footer";
 
 
 const marcellus = Marcellus({
@@ -43,6 +44,7 @@ export default function RootLayout({ children }) {
             { children }
           </div>
           <Footer />
+          <WhatsAppButton />
         </CursorProvider>
         <script
           type="application/ld+json"
