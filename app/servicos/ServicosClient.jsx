@@ -73,7 +73,7 @@ const ServicosClient = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-[20px] mb-8 xl:mb-14 w-full px-4 xl:px-0">
             {/* Fisioterapia */}
             <div 
-              className="flex flex-row items-center gap-4 md:flex-col md:items-start cursor-pointer"
+              className="flex flex-row items-center gap-4 md:flex-col md:items-start cursor-pointer transition-transform hover:-translate-y-1"
               onMouseEnter={() => handleMouseEnterService('fisioterapia')}
               onMouseLeave={handleMouseLeaveService}
             >
@@ -99,7 +99,7 @@ const ServicosClient = () => {
 
             {/* Terapias Integrativas */}
             <div 
-              className="flex flex-row items-center gap-4 md:flex-col md:items-start cursor-pointer"
+              className="flex flex-row items-center gap-4 md:flex-col md::items-start cursor-pointer transition-transform hover:-translate-y-1"
               onMouseEnter={() => handleMouseEnterService('terapiasIntegrativas')}
               onMouseLeave={handleMouseLeaveService}
             >
@@ -125,7 +125,7 @@ const ServicosClient = () => {
 
             {/* Massagens */}
             <div 
-              className="flex flex-row items-center gap-4 md:flex-col md:items-start cursor-pointer"
+              className="flex flex-row items-center gap-4 md:flex-col md:items-start cursor-pointer transition-transform hover:-translate-y-1"
               onMouseEnter={() => handleMouseEnterService('massagens')}
               onMouseLeave={handleMouseLeaveService}
             >
@@ -150,7 +150,7 @@ const ServicosClient = () => {
             </div>
 
                         {/* Pilates */}
-                        <div className="flex flex-row items-center gap-4 md:flex-col md:items-start">
+                        <div className="flex flex-row items-center gap-4 md:flex-col md:items-start transition-transform hover:-translate-y-1">
                           <div className="relative w-24 h-24 md:hidden flex-shrink-0">
                             <Image 
                               src="/assets/logo2.png"
