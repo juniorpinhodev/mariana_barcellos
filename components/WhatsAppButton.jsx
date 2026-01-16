@@ -70,7 +70,7 @@ const WhatsAppButton = () => {
     // Não abre se estiver arrastando
     if (isDragging) return;
     
-    const phoneNumber = "*******";
+    const phoneNumber = "5548984465676";
     const message = "Olá! Gostaria de mais informações sobre os serviços.";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
