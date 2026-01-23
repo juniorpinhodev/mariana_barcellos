@@ -17,13 +17,15 @@ const ServicosClient = () => {
   const images = [
     '/assets/servico/Massoterapia.jpeg',
     '/assets/servico/Fisioterapia_Pediatrica.jpeg',
-    '/assets/servico/Terapias_integrativas.jpeg'
+    '/assets/servico/Terapias_integrativas.jpeg',
+    '/assets/servico/Mariana_Pilates.png',
   ];
 
   const imagesMap = {
     fisioterapia: 1,
     massagens: 0,
     terapiasIntegrativas: 2,
+    pilates: 3,
   };
 
   const handleMouseEnterService = useCallback((service) => {
@@ -149,29 +151,33 @@ const ServicosClient = () => {
               </div>
             </div>
 
-                        {/* Pilates */}
-                        <div className="flex flex-row items-center gap-4 md:flex-col md:items-start transition-transform hover:-translate-y-1">
-                          <div className="relative w-24 h-24 md:hidden flex-shrink-0">
-                            <Image 
-                              src="/assets/logo2.png"
-                              layout="fill" 
-                              objectFit="contain" 
-                              className="rounded-lg"
-                              alt="Logo" 
-                            />
-                          </div>
-                          <div className="flex-1">
-                            <div className="flex items-center gap-[12px] mb-2 w-full justify-start">
-                              <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px] flex-shrink-0"></div>
-                              <h3 className="text-xl xl:text-2xl">Pilates</h3>
-                            </div>
-                            <p className="md:pl-6 text-[13px] xl:text-[15px] text-left leading-relaxed">
-                              Pilates solo visa melhorar a postura, o equilíbrio, a coordenação motora e a consciência corporal, além de promover o fortalecimento muscular, flexibilidade, relaxamento e alívio de dores.
-                              O Pilates oferece diversos benefícios para o corpo e a mente, promovendo saúde, bem-estar e qualidade de vida.
-                            </p>
-                          </div>
-                        </div>          </div>
-
+              {/* Pilates */}
+                          
+            <div className="flex flex-row items-center gap-4 md:flex-col md:items-start cursor-pointer transition-transform hover:-translate-y-1"
+              onMouseEnter={() => handleMouseEnterService('pilates')}
+              onMouseLeave={handleMouseLeaveService}
+            >
+                <div className="relative w-24 h-24 md:hidden flex-shrink-0">
+                  <Image 
+                    src="/assets/servico/Mariana_Pilates.png"
+                    layout="fill" 
+                    objectFit="cover" 
+                    className="rounded-lg"
+                    alt="Pilates solo" 
+                  />
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-[12px] mb-2 w-full justify-start">
+                    <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[22px] rounded-tr-[4px] flex-shrink-0"></div>
+                    <h3 className="text-xl xl:text-2xl">Pilates</h3>
+                  </div>
+                  <p className="md:pl-6 text-[13px] xl:text-[15px] text-left leading-relaxed">
+                    Pilates solo visa melhorar a postura, o equilíbrio, a coordenação motora e a consciência corporal, além de promover o fortalecimento muscular, flexibilidade, relaxamento e alívio de dores.
+                    O Pilates oferece diversos benefícios para o corpo e a mente, promovendo saúde, bem-estar e qualidade de vida.
+                  </p>
+                </div>
+              </div> 
+            </div>
         </motion.div>
 
         {/* carrossel de imagens */}
