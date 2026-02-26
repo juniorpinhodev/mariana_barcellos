@@ -34,7 +34,7 @@ const ContatoClient = () => {
           >
             <h3 className="h3 mb-8 text-center xl:text-left">Entre em contato</h3>
             {/* itens */}
-            <div className="flex flex-col items-center xl:items-start gap-12">
+            <div className="flex flex-col items-start gap-12">
               {/* item endereço */}
               <div className="relative pl-14">
                 {/* icone */}
@@ -43,7 +43,7 @@ const ContatoClient = () => {
                 </div>
                 <div>
                   <h4 className="h4 mb-2">Endereço</h4>
-                  <p className="leading-relaxed">
+                  <p className="leading-relaxed text-sm">
                     Ponte do Imaruim - Palhoça, SC
                   </p>
                 </div>
@@ -52,7 +52,7 @@ const ContatoClient = () => {
               {/* fim item endereço */}
               
               {/* item telefone */}
-<div className="relative right-8 md:left-[1.5rem] xl:left-0 pl-14">
+<div className="relative pl-14">
   {/* icone */}
   <div className="absolute left-0 top-0 w-[36px] h-[36px]">
     <Image src="/assets/contato/phone.svg" fill alt="" />
@@ -60,7 +60,7 @@ const ContatoClient = () => {
   <div>
     <h4 className="h4 mb-2">Telefone</h4>
     <div className="flex flex-col gap-3">
-      <p>Telefone: 48 98446 5676</p>
+      <p className="text-sm">Telefone: 48 98446 5676</p>
       
           {/* Botão WhatsApp */}
           <div className="flex items-center gap-2">
@@ -84,7 +84,7 @@ const ContatoClient = () => {
         {/* fim item telefone */}
 
               {/* item email */}
-              <div className="relative left-1 pl-14">
+              <div className="relative pl-14">
                 {/* icone */}
                 <div className="absolute left-0 top-0 w-[36px] h-[36px]">
                   <Image src="/assets/contato/email.svg" fill alt="" />
@@ -92,7 +92,7 @@ const ContatoClient = () => {
                 <div>
                   <h4 className="h4 mb-2">Email</h4>
                   <div className="flex flex-col gap-1">
-                    <p>fisio.marianafbarcellos@outlook.com</p>
+                    <p className="text-sm">fisio.marianafbarcellos@outlook.com</p>
                   </div>
                 </div>
               </div>
